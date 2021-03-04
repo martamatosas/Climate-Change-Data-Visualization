@@ -1,0 +1,565 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0614.2338                               -->
+<workbook original-version='18.1' source-build='2020.2.2 (20202.20.0614.2338)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='CO2_cumulative2' path='/workbooks' revision='1.2' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='annual-co2-emissions-per-country-region' inline='true' name='federated.0587kuv0thjoxi1h81g4x1anf6eh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='annual-co2-emissions-per-country-region' name='textscan.03wnguz0wy7kh00znu4m00cragd9'>
+            <connection class='textscan' directory='C:/Users/marta/OneDrive/Documentos/DATS 6401 - Final Project - Marta Matosas Fonolleda/Data clean' filename='annual-co2-emissions-per-country-region.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.03wnguz0wy7kh00znu4m00cragd9' name='annual-co2-emissions-per-country-region.csv' table='[annual-co2-emissions-per-country-region#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Entity' ordinal='1' />
+            <column datatype='string' name='Code' ordinal='2' />
+            <column datatype='integer' name='Year' ordinal='3' />
+            <column datatype='real' name='Annual CO₂ emissions (tonnes)' ordinal='4' />
+            <column datatype='string' name='Entity2' ordinal='5' />
+            <column datatype='string' name='Region' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.03wnguz0wy7kh00znu4m00cragd9' name='annual-co2-emissions-per-country-region.csv' table='[annual-co2-emissions-per-country-region#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Entity' ordinal='1' />
+            <column datatype='string' name='Code' ordinal='2' />
+            <column datatype='integer' name='Year' ordinal='3' />
+            <column datatype='real' name='Annual CO₂ emissions (tonnes)' ordinal='4' />
+            <column datatype='string' name='Entity2' ordinal='5' />
+            <column datatype='string' name='Region' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[annual-co2-emissions-per-country-region.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[annual-co2-emissions-per-country-region.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country-region.csv_6E8595914B9A4C07B2506E8C56F7A3EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Entity]</local-name>
+            <parent-name>[annual-co2-emissions-per-country-region.csv]</parent-name>
+            <remote-alias>Entity</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country-region.csv_6E8595914B9A4C07B2506E8C56F7A3EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Code]</local-name>
+            <parent-name>[annual-co2-emissions-per-country-region.csv]</parent-name>
+            <remote-alias>Code</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country-region.csv_6E8595914B9A4C07B2506E8C56F7A3EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[annual-co2-emissions-per-country-region.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country-region.csv_6E8595914B9A4C07B2506E8C56F7A3EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual CO₂ emissions (tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Annual CO₂ emissions (tonnes)]</local-name>
+            <parent-name>[annual-co2-emissions-per-country-region.csv]</parent-name>
+            <remote-alias>Annual CO₂ emissions (tonnes)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country-region.csv_6E8595914B9A4C07B2506E8C56F7A3EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entity2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Entity2]</local-name>
+            <parent-name>[annual-co2-emissions-per-country-region.csv]</parent-name>
+            <remote-alias>Entity2</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country-region.csv_6E8595914B9A4C07B2506E8C56F7A3EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[annual-co2-emissions-per-country-region.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country-region.csv_6E8595914B9A4C07B2506E8C56F7A3EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[Annual CO₂ emissions (tonnes)]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Code]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Entity2]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Entity]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='annual-co2-emissions-per-country-region.csv' datatype='table' name='[__tableau_internal_object_id__].[annual-co2-emissions-per-country-region.csv_6E8595914B9A4C07B2506E8C56F7A3EE]' role='measure' type='quantitative' />
+      <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/marta/OneDrive/Documentos/My Tableau Repository/Workbooks/annual-co2-emissions-per-country-region.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/14/2020 09:39:25 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='annual-co2-emissions-per-country-region' increment-value='%null%' refresh-type='create' rows-inserted='20853' timestamp-start='2020-07-14 21:39:25.735' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>annual-co2-emissions-per-country-region.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20853</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country-region.csv_6E8595914B9A4C07B2506E8C56F7A3EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Entity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Entity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Entity</remote-alias>
+              <ordinal>1</ordinal>
+              <family>annual-co2-emissions-per-country-region.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>314</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country-region.csv_6E8595914B9A4C07B2506E8C56F7A3EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Code</remote-alias>
+              <ordinal>2</ordinal>
+              <family>annual-co2-emissions-per-country-region.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>302</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country-region.csv_6E8595914B9A4C07B2506E8C56F7A3EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>3</ordinal>
+              <family>annual-co2-emissions-per-country-region.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>431</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country-region.csv_6E8595914B9A4C07B2506E8C56F7A3EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Annual CO₂ emissions (tonnes)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Annual CO₂ emissions (tonnes)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Annual CO₂ emissions (tonnes)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>annual-co2-emissions-per-country-region.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5192</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country-region.csv_6E8595914B9A4C07B2506E8C56F7A3EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Entity2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Entity2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Entity2</remote-alias>
+              <ordinal>5</ordinal>
+              <family>annual-co2-emissions-per-country-region.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>270</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country-region.csv_6E8595914B9A4C07B2506E8C56F7A3EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>6</ordinal>
+              <family>annual-co2-emissions-per-country-region.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country-region.csv_6E8595914B9A4C07B2506E8C56F7A3EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Region:nk]' palette='summer_10_0' type='palette'>
+            <map to='#00a2b3'>
+              <bucket>&quot;Africa&quot;</bucket>
+            </map>
+            <map to='#38a452'>
+              <bucket>&quot;America&quot;</bucket>
+            </map>
+            <map to='#4f7cba'>
+              <bucket>&quot;Oceania&quot;</bucket>
+            </map>
+            <map to='#e74b21'>
+              <bucket>&quot;Asia&quot;</bucket>
+            </map>
+            <map to='#f075b0'>
+              <bucket>&quot;Europe&quot;</bucket>
+            </map>
+            <map to='#f3a546'>
+              <bucket>&quot;Antarctica&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <filter class='quantitative' column='[Annual CO₂ emissions (tonnes)]' filter-group='2' included-values='in-range'>
+        <min>-625522256.70000005</min>
+        <max>36153261645.0</max>
+      </filter>
+      <filter class='categorical' column='[Code]' filter-group='2'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[Code]' member='%null%' />
+          <groupfilter from='&quot;ABW&quot;' function='range' level='[Code]' to='&quot;ZWE&quot;' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[Entity2]' filter-group='2'>
+        <groupfilter from='&quot;Afghanistan&quot;' function='range' level='[Entity2]' to='&quot;Zimbabwe&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[Entity]' filter-group='2'>
+        <groupfilter from='&quot;Afghanistan&quot;' function='range' level='[Entity]' to='&quot;Zimbabwe&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[Region]' filter-group='2'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[Region]' member='&quot;Africa&quot;' />
+          <groupfilter function='member' level='[Region]' member='&quot;America&quot;' />
+          <groupfilter function='member' level='[Region]' member='&quot;Antarctica&quot;' />
+          <groupfilter function='member' level='[Region]' member='&quot;Asia&quot;' />
+          <groupfilter function='member' level='[Region]' member='&quot;Europe&quot;' />
+          <groupfilter function='member' level='[Region]' member='&quot;NA&quot;' />
+          <groupfilter function='member' level='[Region]' member='&quot;Oceania&quot;' />
+        </groupfilter>
+      </filter>
+      <filter class='quantitative' column='[Year]' filter-group='2' included-values='in-range'>
+        <min>1751</min>
+        <max>2017</max>
+      </filter>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='annual-co2-emissions-per-country-region.csv' id='annual-co2-emissions-per-country-region.csv_6E8595914B9A4C07B2506E8C56F7A3EE'>
+            <properties context=''>
+              <relation connection='textscan.03wnguz0wy7kh00znu4m00cragd9' name='annual-co2-emissions-per-country-region.csv' table='[annual-co2-emissions-per-country-region#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Entity' ordinal='1' />
+                  <column datatype='string' name='Code' ordinal='2' />
+                  <column datatype='integer' name='Year' ordinal='3' />
+                  <column datatype='real' name='Annual CO₂ emissions (tonnes)' ordinal='4' />
+                  <column datatype='string' name='Entity2' ordinal='5' />
+                  <column datatype='string' name='Region' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='annual-co2-emissions-per-country-region' name='federated.0587kuv0thjoxi1h81g4x1anf6eh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0587kuv0thjoxi1h81g4x1anf6eh'>
+            <column datatype='real' name='[Annual CO₂ emissions (tonnes)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Entity2]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column-instance column='[Entity2]' derivation='None' name='[none:Entity2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Annual CO₂ emissions (tonnes)]' derivation='Sum' name='[sum:Annual CO₂ emissions (tonnes):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0587kuv0thjoxi1h81g4x1anf6eh].[none:Region:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter from='&quot;Africa&quot;' function='range' level='[none:Region:nk]' to='&quot;Europe&quot;' />
+              <groupfilter function='member' level='[none:Region:nk]' member='&quot;Oceania&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0587kuv0thjoxi1h81g4x1anf6eh].[none:Region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0587kuv0thjoxi1h81g4x1anf6eh].[sum:Annual CO₂ emissions (tonnes):qk]' />
+              <color column='[federated.0587kuv0thjoxi1h81g4x1anf6eh].[none:Region:nk]' />
+              <text column='[federated.0587kuv0thjoxi1h81g4x1anf6eh].[none:Entity2:nk]' />
+              <text column='[federated.0587kuv0thjoxi1h81g4x1anf6eh].[sum:Annual CO₂ emissions (tonnes):qk]' />
+              <lod column='[federated.0587kuv0thjoxi1h81g4x1anf6eh].[sum:Annual CO₂ emissions (tonnes):qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Entity2:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0587kuv0thjoxi1h81g4x1anf6eh].[none:Entity2:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Region:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0587kuv0thjoxi1h81g4x1anf6eh].[none:Region:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>CO₂ cumulative emissions (tonnes):	</run>
+                <run bold='true'><![CDATA[<[federated.0587kuv0thjoxi1h81g4x1anf6eh].[sum:Annual CO₂ emissions (tonnes):qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7FC6B340-DBCF-42FF-8069-C5B187B2FE23}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0587kuv0thjoxi1h81g4x1anf6eh].[none:Region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0587kuv0thjoxi1h81g4x1anf6eh].[none:Entity2:nk]</field>
+            <field>[federated.0587kuv0thjoxi1h81g4x1anf6eh].[none:Region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{844BBCC3-041D-406E-BB8C-526CE229C8C2}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      AAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

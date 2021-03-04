@@ -1,0 +1,1034 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0614.2338                               -->
+<workbook original-version='18.1' source-build='2020.2.2 (20202.20.0614.2338)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='CO2_rel' path='/workbooks' revision='1.7' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='annual-co2-emissions-per-country' inline='true' name='federated.1yre9xt1pobf8p1e1oggq1s6ogc5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='annual-co2-emissions-per-country' name='textscan.1ab4i3t1rgm9ko12c2j5002gi2bk'>
+            <connection class='textscan' directory='C:/Users/marta/OneDrive/Documentos/0 Climate Change/Carbon Dioxide Concentration and Emissions' filename='annual-co2-emissions-per-country.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ab4i3t1rgm9ko12c2j5002gi2bk' name='annual-co2-emissions-per-country.csv' table='[annual-co2-emissions-per-country#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Entity' ordinal='0' />
+            <column datatype='string' name='Code' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='integer' name='Annual CO₂ emissions (tonnes)' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1ab4i3t1rgm9ko12c2j5002gi2bk' name='annual-co2-emissions-per-country.csv' table='[annual-co2-emissions-per-country#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Entity' ordinal='0' />
+              <column datatype='string' name='Code' ordinal='1' />
+              <column datatype='integer' name='Year' ordinal='2' />
+              <column datatype='integer' name='Annual CO₂ emissions (tonnes)' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1ab4i3t1rgm9ko12c2j5002gi2bk' name='co2-concentration-long-term_numeric.csv' table='[co2-concentration-long-term_numeric#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Entity' ordinal='0' />
+              <column datatype='string' name='Code' ordinal='1' />
+              <column datatype='string' name='Year' ordinal='2' />
+              <column datatype='real' name='CO₂ concentration (parts per million)' ordinal='3' />
+              <column datatype='integer' name='Year Numeic' ordinal='4' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Annual CO₂ emissions (tonnes)]' value='[annual-co2-emissions-per-country.csv].[Annual CO₂ emissions (tonnes)]' />
+          <map key='[CO₂ concentration (parts per million)]' value='[co2-concentration-long-term_numeric.csv].[CO₂ concentration (parts per million)]' />
+          <map key='[Code (co2-concentration-long-term_numeric.csv)]' value='[co2-concentration-long-term_numeric.csv].[Code]' />
+          <map key='[Code]' value='[annual-co2-emissions-per-country.csv].[Code]' />
+          <map key='[Entity (co2-concentration-long-term_numeric.csv)]' value='[co2-concentration-long-term_numeric.csv].[Entity]' />
+          <map key='[Entity]' value='[annual-co2-emissions-per-country.csv].[Entity]' />
+          <map key='[Year (co2-concentration-long-term_numeric.csv)]' value='[co2-concentration-long-term_numeric.csv].[Year]' />
+          <map key='[Year Numeic]' value='[co2-concentration-long-term_numeric.csv].[Year Numeic]' />
+          <map key='[Year]' value='[annual-co2-emissions-per-country.csv].[Year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[annual-co2-emissions-per-country.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[co2-concentration-long-term_numeric.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Entity]</local-name>
+            <parent-name>[annual-co2-emissions-per-country.csv]</parent-name>
+            <remote-alias>Entity</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Code]</local-name>
+            <parent-name>[annual-co2-emissions-per-country.csv]</parent-name>
+            <remote-alias>Code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[annual-co2-emissions-per-country.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual CO₂ emissions (tonnes)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Annual CO₂ emissions (tonnes)]</local-name>
+            <parent-name>[annual-co2-emissions-per-country.csv]</parent-name>
+            <remote-alias>Annual CO₂ emissions (tonnes)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Entity (co2-concentration-long-term_numeric.csv)]</local-name>
+            <parent-name>[co2-concentration-long-term_numeric.csv]</parent-name>
+            <remote-alias>Entity</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Code (co2-concentration-long-term_numeric.csv)]</local-name>
+            <parent-name>[co2-concentration-long-term_numeric.csv]</parent-name>
+            <remote-alias>Code</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Year (co2-concentration-long-term_numeric.csv)]</local-name>
+            <parent-name>[co2-concentration-long-term_numeric.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO₂ concentration (parts per million)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO₂ concentration (parts per million)]</local-name>
+            <parent-name>[co2-concentration-long-term_numeric.csv]</parent-name>
+            <remote-alias>CO₂ concentration (parts per million)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year Numeic</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year Numeic]</local-name>
+            <parent-name>[co2-concentration-long-term_numeric.csv]</parent-name>
+            <remote-alias>Year Numeic</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[sum:Annual CO₂ emissions (tonnes):qk]&quot;' value='annual emissions' />
+          <alias key='&quot;[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[sum:CO₂ concentration (parts per million):qk]&quot;' value='atmospheric conc.' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Annual CO₂ emissions (tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[CO₂ concentration (parts per million)]' role='measure' type='quantitative' />
+      <column caption='Code (co2-concentration-long-term numeric.csv)' datatype='string' name='[Code (co2-concentration-long-term_numeric.csv)]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Code]' role='dimension' type='nominal' />
+      <column caption='Entity (co2-concentration-long-term numeric.csv)' datatype='string' name='[Entity (co2-concentration-long-term_numeric.csv)]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Entity]' role='dimension' type='nominal' />
+      <column caption='Year (co2-concentration-long-term numeric.csv)' datatype='string' name='[Year (co2-concentration-long-term_numeric.csv)]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year Numeic]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='annual-co2-emissions-per-country.csv' datatype='table' name='[__tableau_internal_object_id__].[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='co2-concentration-long-term_numeric.csv' datatype='table' name='[__tableau_internal_object_id__].[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7]' role='measure' type='quantitative' />
+      <column-instance column='[Annual CO₂ emissions (tonnes)]' derivation='Sum' name='[sum:Annual CO₂ emissions (tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO₂ concentration (parts per million)]' derivation='Sum' name='[sum:CO₂ concentration (parts per million):qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/marta/OneDrive/Documentos/My Tableau Repository/Datasources/annual-co2-emissions-per-country2.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='06/30/2020 01:56:52 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0' table='[Extract].[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0' table='[Extract].[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0]' type='table' />
+            <relation name='co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7' table='[Extract].[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[Annual CO₂ emissions (tonnes)]' value='[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0].[Annual CO₂ emissions (tonnes)]' />
+            <map key='[CO₂ concentration (parts per million)]' value='[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7].[CO₂ concentration (parts per million)]' />
+            <map key='[Code (co2-concentration-long-term_numeric.csv)]' value='[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7].[Code]' />
+            <map key='[Code]' value='[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0].[Code]' />
+            <map key='[Entity (co2-concentration-long-term_numeric.csv)]' value='[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7].[Entity]' />
+            <map key='[Entity]' value='[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0].[Entity]' />
+            <map key='[Year (co2-concentration-long-term_numeric.csv)]' value='[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7].[Year]' />
+            <map key='[Year Numeic]' value='[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7].[Year Numeic]' />
+            <map key='[Year]' value='[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0].[Year]' />
+          </cols>
+          <refresh>
+            <refresh-event add-from-file-path='annual-co2-emissions-per-country' increment-value='%null%' refresh-type='create' rows-inserted='22724' timestamp-start='2020-06-30 01:56:52.404' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Entity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Entity]</local-name>
+              <parent-name>[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0]</parent-name>
+              <remote-alias>Entity</remote-alias>
+              <ordinal>0</ordinal>
+              <family>annual-co2-emissions-per-country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>302</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Code]</local-name>
+              <parent-name>[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0]</parent-name>
+              <remote-alias>Code</remote-alias>
+              <ordinal>1</ordinal>
+              <family>annual-co2-emissions-per-country.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>286</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>annual-co2-emissions-per-country.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>440</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Annual CO₂ emissions (tonnes)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Annual CO₂ emissions (tonnes)]</local-name>
+              <parent-name>[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0]</parent-name>
+              <remote-alias>Annual CO₂ emissions (tonnes)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>annual-co2-emissions-per-country.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5051</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Entity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Entity (co2-concentration-long-term_numeric.csv)]</local-name>
+              <parent-name>[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7]</parent-name>
+              <remote-alias>Entity</remote-alias>
+              <ordinal>4</ordinal>
+              <family>co2-concentration-long-term_numeric.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Code (co2-concentration-long-term_numeric.csv)]</local-name>
+              <parent-name>[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7]</parent-name>
+              <remote-alias>Code</remote-alias>
+              <ordinal>5</ordinal>
+              <family>co2-concentration-long-term_numeric.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Year (co2-concentration-long-term_numeric.csv)]</local-name>
+              <parent-name>[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>6</ordinal>
+              <family>co2-concentration-long-term_numeric.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1871</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CO₂ concentration (parts per million)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CO₂ concentration (parts per million)]</local-name>
+              <parent-name>[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7]</parent-name>
+              <remote-alias>CO₂ concentration (parts per million)</remote-alias>
+              <ordinal>7</ordinal>
+              <family>co2-concentration-long-term_numeric.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1278</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year Numeic</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year Numeic]</local-name>
+              <parent-name>[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7]</parent-name>
+              <remote-alias>Year Numeic</remote-alias>
+              <ordinal>8</ordinal>
+              <family>co2-concentration-long-term_numeric.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1871</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='summer_10_0' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[sum:Annual CO₂ emissions (tonnes):qk]:1&quot;</bucket>
+            </map>
+            <map to='#e74b21'>
+              <bucket>&quot;[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[sum:CO₂ concentration (parts per million):qk]&quot;</bucket>
+            </map>
+            <map to='#f075b0'>
+              <bucket>&quot;[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[sum:Annual CO₂ emissions (tonnes):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[sum:CO₂ concentration (parts per million):qk]:1&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <filter class='quantitative' column='[Annual CO₂ emissions (tonnes)]' filter-group='2' included-values='in-range'>
+        <min>-625522257</min>
+        <max>36153261645</max>
+      </filter>
+      <filter class='categorical' column='[Code]' filter-group='2'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[Code]' member='%null%' />
+          <groupfilter from='&quot;ABW&quot;' function='range' level='[Code]' to='&quot;ZWE&quot;' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[Entity]' filter-group='2'>
+        <groupfilter from='&quot;Afghanistan&quot;' function='range' level='[Entity]' to='&quot;Zimbabwe&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='quantitative' column='[Year]' filter-group='2' included-values='in-range'>
+        <min>1751</min>
+        <max>2017</max>
+      </filter>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='annual-co2-emissions-per-country.csv' id='annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0'>
+            <properties context=''>
+              <relation connection='textscan.1ab4i3t1rgm9ko12c2j5002gi2bk' name='annual-co2-emissions-per-country.csv' table='[annual-co2-emissions-per-country#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Entity' ordinal='0' />
+                  <column datatype='string' name='Code' ordinal='1' />
+                  <column datatype='integer' name='Year' ordinal='2' />
+                  <column datatype='integer' name='Annual CO₂ emissions (tonnes)' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0' table='[Extract].[annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0]' type='table' />
+            </properties>
+          </object>
+          <object caption='co2-concentration-long-term_numeric.csv' id='co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7'>
+            <properties context=''>
+              <relation connection='textscan.1ab4i3t1rgm9ko12c2j5002gi2bk' name='co2-concentration-long-term_numeric.csv' table='[co2-concentration-long-term_numeric#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Entity' ordinal='0' />
+                  <column datatype='string' name='Code' ordinal='1' />
+                  <column datatype='string' name='Year' ordinal='2' />
+                  <column datatype='real' name='CO₂ concentration (parts per million)' ordinal='3' />
+                  <column datatype='integer' name='Year Numeic' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7' table='[Extract].[co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Year]' />
+              <expression op='[Year Numeic]' />
+            </expression>
+            <first-end-point object-id='annual-co2-emissions-per-country.csv_6E643B5BE74143DF962D74347B56D7F0' />
+            <second-end-point object-id='co2-concentration-long-term_numeric.csv_7BD1EE4DA5464190AFAB11E19B8B6DF7' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='co2-concentration-long-term_numeric' inline='true' name='federated.0x0i4th0hoh8s912bw7bk02k9t6i' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='co2-concentration-long-term_numeric' name='textscan.1qfq5c7018c1zx17vu7bo1juyar4'>
+            <connection class='textscan' directory='C:/Users/marta/OneDrive/Documentos/0 Climate Change/Carbon Dioxide Concentration and Emissions' filename='co2-concentration-long-term_numeric.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1qfq5c7018c1zx17vu7bo1juyar4' name='co2-concentration-long-term_numeric.csv' table='[co2-concentration-long-term_numeric#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Entity' ordinal='0' />
+            <column datatype='string' name='Code' ordinal='1' />
+            <column datatype='string' name='Year' ordinal='2' />
+            <column datatype='real' name='CO₂ concentration (parts per million)' ordinal='3' />
+            <column datatype='integer' name='Year Numeic' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1qfq5c7018c1zx17vu7bo1juyar4' name='co2-concentration-long-term_numeric.csv' table='[co2-concentration-long-term_numeric#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Entity' ordinal='0' />
+            <column datatype='string' name='Code' ordinal='1' />
+            <column datatype='string' name='Year' ordinal='2' />
+            <column datatype='real' name='CO₂ concentration (parts per million)' ordinal='3' />
+            <column datatype='integer' name='Year Numeic' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[co2-concentration-long-term_numeric.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Entity]</local-name>
+            <parent-name>[co2-concentration-long-term_numeric.csv]</parent-name>
+            <remote-alias>Entity</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Code]</local-name>
+            <parent-name>[co2-concentration-long-term_numeric.csv]</parent-name>
+            <remote-alias>Code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[co2-concentration-long-term_numeric.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO₂ concentration (parts per million)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO₂ concentration (parts per million)]</local-name>
+            <parent-name>[co2-concentration-long-term_numeric.csv]</parent-name>
+            <remote-alias>CO₂ concentration (parts per million)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year Numeic</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year Numeic]</local-name>
+            <parent-name>[co2-concentration-long-term_numeric.csv]</parent-name>
+            <remote-alias>Year Numeic</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Code]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Entity]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year Numeic]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='co2-concentration-long-term_numeric.csv' datatype='table' name='[__tableau_internal_object_id__].[co2-concentration-long-term_numeric.csv_A7D02571D75840E089B44702183B924F]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/marta/OneDrive/Documentos/My Tableau Repository/Datasources/co2-concentration-long-term_numeric2.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='06/30/2020 01:59:26 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='co2-concentration-long-term_numeric' increment-value='%null%' refresh-type='create' rows-inserted='1871' timestamp-start='2020-06-30 01:59:26.954' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Entity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Entity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Entity</remote-alias>
+              <ordinal>0</ordinal>
+              <family>co2-concentration-long-term_numeric.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2-concentration-long-term_numeric.csv_A7D02571D75840E089B44702183B924F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Code</remote-alias>
+              <ordinal>1</ordinal>
+              <family>co2-concentration-long-term_numeric.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2-concentration-long-term_numeric.csv_A7D02571D75840E089B44702183B924F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>co2-concentration-long-term_numeric.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1871</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2-concentration-long-term_numeric.csv_A7D02571D75840E089B44702183B924F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CO₂ concentration (parts per million)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CO₂ concentration (parts per million)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CO₂ concentration (parts per million)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>co2-concentration-long-term_numeric.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1278</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2-concentration-long-term_numeric.csv_A7D02571D75840E089B44702183B924F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year Numeic</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year Numeic]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year Numeic</remote-alias>
+              <ordinal>4</ordinal>
+              <family>co2-concentration-long-term_numeric.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1871</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[co2-concentration-long-term_numeric.csv_A7D02571D75840E089B44702183B924F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+        <filter class='categorical' column='[Code]'>
+          <groupfilter function='member' level='[Code]' member='&quot;OWID_WRL&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        </filter>
+        <filter class='categorical' column='[Entity]'>
+          <groupfilter function='member' level='[Entity]' member='&quot;World&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        </filter>
+        <filter class='quantitative' column='[Year Numeic]' included-values='in-range'>
+          <min>-803719</min>
+          <max>2018</max>
+        </filter>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='co2-concentration-long-term_numeric.csv' id='co2-concentration-long-term_numeric.csv_A7D02571D75840E089B44702183B924F'>
+            <properties context=''>
+              <relation connection='textscan.1qfq5c7018c1zx17vu7bo1juyar4' name='co2-concentration-long-term_numeric.csv' table='[co2-concentration-long-term_numeric#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Entity' ordinal='0' />
+                  <column datatype='string' name='Code' ordinal='1' />
+                  <column datatype='string' name='Year' ordinal='2' />
+                  <column datatype='real' name='CO₂ concentration (parts per million)' ordinal='3' />
+                  <column datatype='integer' name='Year Numeic' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Sheet 4' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Sheet 4' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='annual-co2-emissions-per-country' name='federated.1yre9xt1pobf8p1e1oggq1s6ogc5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yre9xt1pobf8p1e1oggq1s6ogc5'>
+            <column datatype='integer' name='[Annual CO₂ emissions (tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[CO₂ concentration (parts per million)]' role='measure' type='quantitative' />
+            <column caption='Entity (co2-concentration-long-term numeric.csv)' datatype='string' name='[Entity (co2-concentration-long-term_numeric.csv)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Entity]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Entity (co2-concentration-long-term_numeric.csv)]' derivation='None' name='[none:Entity (co2-concentration-long-term_numeric.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Entity]' derivation='None' name='[none:Entity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Annual CO₂ emissions (tonnes)]' derivation='Sum' name='[sum:Annual CO₂ emissions (tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CO₂ concentration (parts per million)]' derivation='Sum' name='[sum:CO₂ concentration (parts per million):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[none:Entity (co2-concentration-long-term_numeric.csv):nk]'>
+            <groupfilter function='level-members' level='[none:Entity (co2-concentration-long-term_numeric.csv):nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[none:Entity:nk]'>
+            <groupfilter function='member' level='[none:Entity:nk]' member='&quot;World&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[none:Year:qk]' included-values='in-range'>
+            <min>1750</min>
+            <max>2017</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[sum:CO₂ concentration (parts per million):qk]' included-values='in-range'>
+            <min>273.06999999999999</min>
+            <max>406.55000000000001</max>
+          </filter>
+          <slices>
+            <column>[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[none:Year:qk]</column>
+            <column>[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[none:Entity (co2-concentration-long-term_numeric.csv):nk]</column>
+            <column>[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[none:Entity:nk]</column>
+            <column>[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[sum:CO₂ concentration (parts per million):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[sum:CO₂ concentration (parts per million):qk]' scope='rows' value='CO₂ atmospheric concentration (parts per million)' />
+            <encoding attr='space' class='0' field='[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[sum:CO₂ concentration (parts per million):qk]' field-type='quantitative' fold='true' max='428.01180690876885' min='250.0' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[none:Year:qk]' field-type='quantitative' major-origin='0' major-spacing='25' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[sum:Annual CO₂ emissions (tonnes):qk]' scope='rows' value='CO₂ annual emissions (tonnes)' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[:Measure Names]' value='Carbon dioxide measures'>
+              <formatted-text>
+                <run>Carbon dioxide measures</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[sum:Annual CO₂ emissions (tonnes):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[none:Year:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>CO₂ annual emissions (tonnes):&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[sum:Annual CO₂ emissions (tonnes):qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[sum:CO₂ concentration (parts per million):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[none:Year:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>CO₂ atmospheric conc. (parts per million):	</run>
+                <run bold='true'><![CDATA[<[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[sum:CO₂ concentration (parts per million):qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>([federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[sum:Annual CO₂ emissions (tonnes):qk] + [federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[sum:CO₂ concentration (parts per million):qk])</rows>
+        <cols>[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{EFBDF1C7-BE9D-400B-9785-66F7DF66A9DF}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='75'>
+    <window class='worksheet' maximized='true' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0x0i4th0hoh8s912bw7bk02k9t6i].[none:Year Numeic:qk]</field>
+            <field>[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[none:Entity (co2-concentration-long-term_numeric.csv):nk]</field>
+            <field>[federated.1yre9xt1pobf8p1e1oggq1s6ogc5].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3486F392-11DF-42AD-8EA8-3387BC225960}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
