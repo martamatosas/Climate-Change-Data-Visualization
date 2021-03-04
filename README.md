@@ -1,11 +1,13 @@
-Climate Change DAta Visualization
-
 Visualizations:
 
 1- Earth's Average Temperaure animated spiral:
 
 <img width="422" alt="Capture_Climate_Spiral_2017" src="https://user-images.githubusercontent.com/53956697/109977859-430c0a80-7ccb-11eb-8c46-f46871560ecd.PNG">
 
+2- Anomalies:
+
+<img width="700" alt="Capture_Anomalies" src="https://user-images.githubusercontent.com/53956697/109979199-a185b880-7ccc-11eb-86ea-47a508528d7d.PNG">
+Climate Change DAta Visualization
 
 
 Files:
