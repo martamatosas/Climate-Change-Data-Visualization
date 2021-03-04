@@ -38,3 +38,6 @@ Output: co2-concentration-long-term_numeric.csv
 Input: annual-co2-emissions-per-country.csv
 
 Output: annual-co2-emissions-per-country-region.csv
+
+<img width="526" alt="Capture" src="https://user-images.githubusercontent.com/53956697/109915397-c6077380-7c7f-11eb-863f-275b486cc1ad.PNG">
+
