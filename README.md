@@ -39,3 +39,6 @@ Input: annual-co2-emissions-per-country.csv
 
 Output: annual-co2-emissions-per-country-region.csv
 
+<img width="422" alt="Capture_Climate_Spiral_2017" src="https://user-images.githubusercontent.com/53956697/109977579-f45e7080-7cca-11eb-93e4-939ff5508d05.PNG">
+
+
