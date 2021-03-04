@@ -29,6 +29,7 @@ Bottom graph: annual average of temperature anomalies per year (Celsius).
 
 5- Top 10 carbon dioxide emitters, 2017
 
+<img width="693" alt="Capture_Top10" src="https://user-images.githubusercontent.com/53956697/109981534-03dfb880-7ccf-11eb-9a89-8d9521f515f7.PNG">
 
 6- Cumulative carbon dioxide emissions, 1751 - 2017
 Showing the EU-28 countries as an entity since their carbon dioxide emissions quota is negotiated as a group.
