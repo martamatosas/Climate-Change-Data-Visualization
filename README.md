@@ -24,6 +24,7 @@ Bottom graph: annual average of temperature anomalies per year (Celsius).
 
 4- Carbon dioxide concentration in the atmosphere and annual global emissions, 1750 - 2017
 
+<img width="687" alt="Capture_CO2 measures comparison" src="https://user-images.githubusercontent.com/53956697/109981295-c4b16780-7cce-11eb-8c95-a7a0bf12cd33.PNG">
 
 
 5- Top 10 carbon dioxide emitters, 2017
