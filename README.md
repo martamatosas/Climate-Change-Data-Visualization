@@ -20,6 +20,7 @@ Bottom graph: annual average of temperature anomalies per year (Celsius).
 
 3- Evolution of carbon dioxide concentration in the atmosphere, 803,719 BCE - 2018
 
+<img width="699" alt="Capture_Atmospheric CO2" src="https://user-images.githubusercontent.com/53956697/109980493-f970ef00-7ccd-11eb-8090-523211beb7e8.PNG">
 
 
 Files:
