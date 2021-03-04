@@ -34,9 +34,7 @@ Bottom graph: annual average of temperature anomalies per year (Celsius).
 6- Cumulative carbon dioxide emissions, 1751 - 2017
 Showing the EU-28 countries as an entity since their carbon dioxide emissions quota is negotiated as a group.
 
-
-
-
+<img width="640" alt="Capture_CO2 Accum Emissions" src="https://user-images.githubusercontent.com/53956697/109981864-50c38f00-7ccf-11eb-8f85-4792209a97a4.PNG">
 
 
 
