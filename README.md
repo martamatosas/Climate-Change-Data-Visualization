@@ -1,6 +1,6 @@
 Climate Change
 
-Visualizations, static images, originally they originallly animated or interactive, embedded in a website (http://localhost:9000/ClimateChange/):
+Visualizations, static images - 1 and 2 are originallly an animated polar and an interactive Tableau viz, respectively - embedded in a website (http://localhost:9000/ClimateChange/):
 
 1- Rise of the average temperature of the Earth's surface, 1850 - 2019
 The variation of the global surface temperature in Celsius (C) is calculated with respect to the mean of the global temperatures from 1850 to 1900, period adopted as an approximation of preindustrial conditions by the Intergovernmental Panel on Climate Change.
@@ -21,6 +21,21 @@ Bottom graph: annual average of temperature anomalies per year (Celsius).
 3- Evolution of carbon dioxide concentration in the atmosphere, 803,719 BCE - 2018
 
 <img width="699" alt="Capture_Atmospheric CO2" src="https://user-images.githubusercontent.com/53956697/109980493-f970ef00-7ccd-11eb-8090-523211beb7e8.PNG">
+
+4- Carbon dioxide concentration in the atmosphere and annual global emissions, 1750 - 2017
+
+
+
+5- Top 10 carbon dioxide emitters, 2017
+
+
+6- Cumulative carbon dioxide emissions, 1751 - 2017
+Showing the EU-28 countries as an entity since their carbon dioxide emissions quota is negotiated as a group.
+
+
+
+
+
 
 
 Files:
