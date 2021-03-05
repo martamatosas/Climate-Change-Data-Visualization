@@ -1,6 +1,6 @@
 # The Climate Change Crisis
 
-Note: visualizations included below as static images - 1 and 2 are originallly an animated polar and an interactive Tableau viz, respectively - embedded in a website (http://localhost:9000/ClimateChange/):
+Visualizations included below as static images -1 and 2 are originallly an animated polar and an interactive Tableau viz, respectively- are embedded in a website (http://localhost:9000/ClimateChange/):
 
 1- Rise of the average temperature of the Earth's surface, 1850 - 2019
 The variation of the global surface temperature in Celsius (C) is calculated with respect to the mean of the global temperatures from 1850 to 1900, period adopted as an approximation of preindustrial conditions by the Intergovernmental Panel on Climate Change.
