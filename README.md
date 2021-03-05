@@ -1,6 +1,6 @@
-Climate Change
+# The Climate Change Crisis
 
-Visualizations, static images - 1 and 2 are originallly an animated polar and an interactive Tableau viz, respectively - embedded in a website (http://localhost:9000/ClimateChange/):
+Note: visualizations included below as static images - 1 and 2 are originallly an animated polar and an interactive Tableau viz, respectively - embedded in a website (http://localhost:9000/ClimateChange/):
 
 1- Rise of the average temperature of the Earth's surface, 1850 - 2019
 The variation of the global surface temperature in Celsius (C) is calculated with respect to the mean of the global temperatures from 1850 to 1900, period adopted as an approximation of preindustrial conditions by the Intergovernmental Panel on Climate Change.
@@ -37,8 +37,7 @@ Showing the EU-28 countries as an entity since their carbon dioxide emissions qu
 <img width="640" alt="Capture_CO2 Accum Emissions" src="https://user-images.githubusercontent.com/53956697/109981864-50c38f00-7ccf-11eb-8f85-4792209a97a4.PNG">
 
 
-
-Files:
+**Files:**
 
 1- Data: original data files:
 
